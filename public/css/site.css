@@ -1,0 +1,69 @@
+/*
+
+selector {
+	property1: value1;
+	property2: value2;
+}
+*/
+
+body {
+	background-color: #FF00FF;
+	background-color: papayawhip;
+	background-color: salmon;
+}
+main {
+	background-color: #white;
+}
+#wrapper {
+	background-color: grey;
+	width: 500px;
+}
+
+.languages {
+	color: pink;
+}
+
+.bigtext {
+	font-size: 2em;
+}
+
+li {
+	color: purple;
+}
+
+#wrapper h2 {
+	font-size: 1em;
+	color: green;
+}
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:orange;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
+}
+
+h2 { text-decoration: underline; 
+	 
+}
+body {background-image: url("/../background.png");
+}
+ol { list-style: upper-alpha; }
+ul { list-style: square; }
+
+body { font-family:'Oswald', sans-serif;; }
+
+tr {font-size: 14px;}
+td {font-size: 12px;}

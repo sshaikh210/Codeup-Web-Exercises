@@ -1,0 +1,62 @@
+
+h2 {
+	text-decoration: underline;
+}
+
+body { border: 1 solid black;
+}
+
+div {
+	width: 50px;
+	height: 50px;
+	padding: 11px; 
+	border: 1px solid black;
+	color: black;
+	float: left;
+	clear: nth-child(even);
+}
+
+img { 
+	position: relative;
+	top: -85px;
+	right: -45px;
+}
+
+.red {
+	background-color: red;
+	margin: 25px 25px;
+	clear: both;
+
+}
+.orange {
+	background-color: orange;
+	margin: 25px 25px;
+}
+.yellow {
+	background-color: yellow;
+	margin: 25px 25px;
+	clear: both;
+}
+.green {
+	background-color: green;
+	margin: 25px 25px;
+}
+.blue {
+	background-color: blue;
+	margin: 25px 25px;
+	clear: both;
+}
+.purple {
+	background-color: purple;
+	margin: 25px 25px;
+}
+
+
+/*
+The content area of each box is 150 pixels wide by 50 pixels high.
+The overall size of each box is 172 pixels wide by 72 pixels high.
+The orange box is indented by 30 pixels.
+Each subsequent box is indented by 30 more pixels than the previous.
+There are 10 pixels of space between the boxes.
+The wavelength text is bold.
+The header should link to the wikipedia article on the specified subject.*/

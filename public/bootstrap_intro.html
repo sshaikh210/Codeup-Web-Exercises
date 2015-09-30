@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<title>Sakib Resume</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+<script src="//code.jquery"></script>
+<script src="/js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/resume.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sakib Shaikh</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<main class="container">
+		<div class="jumbotron">
+      <h1>Sakib Shaikh</h1>
+      <div class="sakib">
+        <p>Who is Sakib Shaikh?</p>
+          <ul>
+  		      <li>Software Engineer</li>
+  		      <li>Prolific Traveler</li>
+  		      <li>Business Developer</li>
+  	      </ul>
+      </div>
+      <div class="edu">
+        <div class="row">
+          <div class="col-xs-9"><h3>Education:</h3>
+              <ul>
+                <li>Master of Arts in International Relations</li>
+                <li>Bachelor of Arts in Political Science</li>
+                <li>Codeup: Full-Stack Web Development</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="row">
+          <div class="col-xs-4"><h5>Experience:</h5>
+            <h4>Energy Transfer Partners</h4>
+            <ul>
+              <li>Business Analyst - Collected requirements for new release and updates for existing SAP FI/CO Functionality</li>
+            </ul>
+          </div>
+          <div class="col-xs-4"><br><h4>Capgemini</h4>
+              <ul>
+                <li>Associate Consultant - Gathered requirements and presented proof of concept to clients on new implementations and enhancements to existing systems and processes</li>
+              </ul>
+          </div>
+          <div class="col-xs-4"><br><h4>Accenture</h4>
+            <ul>
+              <li>Systems Test Analyst - Created test case scenarios for the Department of Educations Student Loan program</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="con">
+      <h3>Contact Me</h3>
+      <form method="POST" action="/forms.php">
+
+        <label for="name">Name</label>
+      <p>
+        <input id="name" name="name" type="text" placeholder="Your Name">
+      </p>
+      <p>
+        <label for="subject">Subject</label>
+      </p>
+      <p>
+          <input id="subject" name="Subject" type="text" placeholder="Subject">
+      </p>
+      <p>
+          <label for="body">Body</label>
+      </p>
+      <p>
+          <textarea id="body" name="body" type="textarea" placeholder="Type your message here"></textarea>
+      </p>
+      <p>
+          <button type="submit">Contact Me!</button>
+      </p>
+    </div>
+    </main>  
+</form>
+</body>
+</html>
