@@ -4,11 +4,10 @@
 <title>Sakib Resume</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-<script src="//code.jquery"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/js/bootstrap.js"></script>
 <link rel="stylesheet" type="text/css" href="/css/resume.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
@@ -47,7 +46,31 @@
 	<main class="container">
 		<div class="jumbotron">
       <h1>Sakib Shaikh</h1>
-      <div class="sakib">
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Who is Sakib Shaikh?</h4>
+      </div>
+      <div class="modal-body">
+        <p>Who is Sakib Shaikh?</p>
+          <ul>
+            <li>Software Engineer</li>
+            <li>Prolific Traveler</li>
+            <li>Business Developer</li>
+          </ul>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="sakib" data-toggle="modal" data-target="#myModal">
         <p>Who is Sakib Shaikh?</p>
           <ul>
   		      <li>Software Engineer</li>
