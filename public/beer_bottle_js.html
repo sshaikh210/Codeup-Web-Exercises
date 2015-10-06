@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline JS</title>
+</head>
+<body>
+    <script>
+
+	var number = 99;
+
+	while(number >= 1) {
+		console.log(number + " " + 'bottles of beer on the wall. Take one down, pass it around."');
+		number -=1;
+
+		if(number == 1) {
+			console.log(number + " " + 'bottle of beer on the wall. Take it down and pass it around');
+		} else{
+			console.log(number + " " + 'bottles of beer on the wall. Take one down, pass it around');
+		}
+		number -= 1;
+	}
+
+	console.log('No bottles of beer. someone go to the store');
+	console.log(number);
+
+	for (var i = 99; i >= 1; i = i -= 1) {
+		    console.log(i + " " + 'bottles of beer on the wall');
+		    console.log(i + " " + 'bottles of beer');
+		} 
+	console.log('No bottles of beer. someone go to the store');
+	console.log(number);
+</script>
+</body>
+</html>
+
+//    for (var i = 99; i >= 1; i = i -= 1) {
+		    console.log(i + " " + 'bottles of beer on the wall');
+		    console.log(i + " " + 'bottles of beer');
+		} 
+
+
+// conditional - if there are any beers, then perform line below:
+// n "bottles of beer on the wall... take down and pass it around"
+// if there is only one beer
+// "1 bottle of beer on the wall"
+// if there are no bottles
+// "someone needs to go to the store"
