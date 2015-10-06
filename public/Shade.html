@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline JS</title>
+</head>
+<body>
+    <script>
+   "use strict"
+    function rectangle(l, w){
+      var area= (l * w);
+      console.log(area);
+    }
+    rectangle(15, 8);
+
+    function pythagorean(sideA, sideB){
+      return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+      }
+
+      console.log(pythagorean(8, 9));
+
+    function Circle(radius) {
+     this.radius = radius;
+     this.area = Math.PI * Math.pow(this.radius,2);
+  }
+      var radius = 4;
+      var myCircle = new Circle(radius);
+
+      console.log(circle);
+</script>
+</body>
+</html>
