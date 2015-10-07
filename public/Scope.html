@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope JS</title>
+</head>
+<body>
+    <script>
+				// declare a global variable
+		var globalVar = "Look, I'm Global!";
+
+		// call the say hello function
+		sayHello();
+
+		// define the sayHello function
+		function sayHello() {
+		    // globalVar is accessible here since the sayHello function scope is a sub-scope of the global scope
+		    console.log(globalVar);
+		}  
+				// declare a global variable
+		var globalVar = "Look, I'm Global!";
+
+		// call the say hello function
+		sayHello();
+
+		// define the sayHello function
+		function sayHello() {
+		    // declare a local variable
+		    var localVar = "Look, I'm Local!";
+
+		    // localVar is accessible here
+		    console.log(localVar);
+
+		    // globalVar is accessible here
+		    console.log(globalVar);
+		}
+
+		// localVar is NOT accessible here (out-of-scope) and this will produce an error
+			console.log(localVar);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>High Low Challenge</title>
+</head>
+<body>
+    <script>
+
+		var guess = 99;
+		var target = 0;
+		var turns = 0;
+		var msg = "";
+
+		target = Math.floor(Math.random() * 100) + 1;
+		alert (target);
+
+		msg = "Guess my number between 1 and 100 !. \n";
+		msg += "Guess the number, and I'll tell you if it's too high, \n";
+		msg += "too low, or correct. ";
+		alert (msg);
+
+		guess = eval(prompt("What is your guess?", ""));
+
+		while ( guess != target){
+		  if (guess > target){
+		guess = prompt (turns + ".  Too high!! Try again!!", "");
+		  } // end if
+
+		  if (guess < target){
+		    guess = prompt (turns + ".  Too low!! Try again!!", "");
+		  } // end if
+
+		  if (guess == target){
+		    msg = "YOU WIN!!! \n";
+		    alert (msg);
+		  } // end if
+		} // end while
+			
+ 
+</script>
+</body>
+</html>
+
+<!-- 1. Generate a random number
+2. Have the user guess the number
+3. Check the user's guess with the random number
+4. If they guess high or low let them know
+5. Have the user keep guessing until they get it right
+
+Extra:
+1. Set a guess limit
+2. Make an option to play again(new random number) -->
