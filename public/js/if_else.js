@@ -37,8 +37,6 @@ else {
 (color == "violet") ? "Operation was successful." : "Oops, something went wrong.";
 (color == "indigo") ? "Operation was successful." : "Oops, something went wrong.";
 
-
-
 // TODO: When a color is encountered log a message that tells the color, and an object of that color.
 //       Example: Blue is the color of the sky.
 
