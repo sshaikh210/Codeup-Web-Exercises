@@ -1,28 +1,19 @@
 <html>
 <head>
-	<title></title>
+    <title></title>
 </head>
 <body>
+    <button id="btn1">Click Me!</button>
+    <script>
 
-<script>
-<ul>
-    <li data-dbid="123">Item one</li>
-    <li data-dbid="234">Item two</li>
-</ul>
-<script>
-    "use strict";
-    (function() {
-        // Get the main heading h1 by id
-        var listItems = document.getElementsByTagName('li');
-
-        for (var i = 0; i < listItems.length; i++) {
-            var dbId = listItems[i].getAttribute("data-dbid");
-            console.log(dbId);
+        // create a handler function
+        var listener = function (event) {
+            alert('You clicked the button!');
         }
-        // Prints
-        // 123
-        // 234
-    })();
-</script>
+
+        // register the listener to handle clicks on btn1
+        document.getElementById('btn1').addEventListener('click', listener, false);
+
+    </script>
 </body>
 </html>

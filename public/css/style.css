@@ -1,0 +1,93 @@
+body {
+	background-image: url("http://www.motionbackgroundsforfree.com/wp-content/uploads/2012/04/Screen-shot-2012-04-02-at-3.46.15-PM.png");
+}
+.calculator {
+    background-color: clear;
+    color: black;
+    border: 1px solid black;
+    width: 215px;
+    height: auto;
+    border-radius: 10px;
+	padding: 10px;
+	margin: auto;
+}
+.number {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: white;
+}
+.operator {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	border-radius: 10px;
+}
+#clear {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	background-color: yellow;
+	width: 105px;
+	height: 50px;
+	border-radius: 10px;	
+}
+#total {
+	background-color: white;
+	font-family: 'Oswald', sans-serif;
+    height: 60px;
+    width: 200px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    font-size: 60px;
+    text-align: right;
+   	border-radius: 10px; 
+}
+#firstinput {
+	background-color: white;
+	font-family: 'Oswald', sans-serif;
+    height: 25px;
+    width: 65px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: right;
+    border-radius: 10px;
+}
+#secondinput {
+	background-color: white;
+	font-family: 'Oswald', sans-serif;
+    height: 25px;
+    width: 65px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: right;
+   	border-radius: 10px;
+}
+#thirdinput {
+	background-color: white;
+	font-family: 'Oswald', sans-serif;
+    height: 25px;
+    width: 64px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: right;
+ 	border-radius: 10px;
+}
+#equal {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	border-radius: 10px;
+}
