@@ -1,4 +1,4 @@
-<<html>
+<html>
 <head>
 	<script src="/js/jquery.js"></script>
 	<title>JQuery Exercise</title>
@@ -6,8 +6,19 @@
 <body>
 	<script>
 	$(document).ready(function() {
-	    alert( 'The DOM has finished loading!' );
-	});
+    var contents = $('#header');
+    alert(contents.html());
+});
 	</script>
+<h1 id = 'header'>Welcome to Codeup!</h1>
+<div>
+<p id='par'>What do you learn at Codeup?</p>
+<ul class = 'ul'>
+	<li>JavaScript</li>
+	<li>JQuery</li>
+	<li>MySQL</li>
+	<li>PHP</li>
+</ul>
+</div>
 </body>
 </html>
