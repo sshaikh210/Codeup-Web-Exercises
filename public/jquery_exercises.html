@@ -1,24 +1,35 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<script src="/js/jquery.js"></script>
-	<title>JQuery Exercise</title>
-</head>
-<body>
-	<script>
+    <title>Codeup Page</title>
+    <style>
+        .codeup {
+            text-align: left;
+        }
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
 	$(document).ready(function() {
-    var contents = $('#header');
-    alert(contents.html());
+    $('.codeup').css('border', 'red solid 1px').css('width', '300px');
 });
 	</script>
-<h1 id = 'header'>Welcome to Codeup!</h1>
-<div>
-<p id='par'>What do you learn at Codeup?</p>
-<ul class = 'ul'>
-	<li>JavaScript</li>
-	<li>JQuery</li>
-	<li>MySQL</li>
-	<li>PHP</li>
-</ul>
-</div>
+</head>
+<body>
+    <h1>Welcome to Codeup</h1>
+    <div class="codeup">
+        <h3>CODEUP</h3>
+        <p>The first and only local Coding Bootcamp!!</p>
+    </div>
+    <div>
+        <h2>What does Codeup teach?</h2>
+        <p>Codeup teaches a Full-Stack of coding languages. Including, but not limited to:
+        	<ul class="codeup">
+        		<li>Javascript</li>
+        		<li>Angular</li>
+        		<li>PHP</li>
+        	</ul>
+        </p>
+    </div>
+    <p class="codeup">Be sure to set up an appointment today!</p>
 </body>
 </html>
