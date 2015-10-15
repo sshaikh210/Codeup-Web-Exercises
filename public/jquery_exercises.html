@@ -10,11 +10,19 @@
     <script src="/js/jquery.js"></script>
     <script>
 	$(document).ready(function() {
-    $('li').css('font-size', '20px').css('width', '200px');
-    $('h1, p, li').css('background-color', 'yellow').css('width', '280px');
-    $(document).ready(function() {
-    alert( 'Welcome to Codeup!' );
-});
+   	$('h1').click(function() {
+	$(this).css('background-color', 'yellow').css('width', '290px'); 
+	$('p').dblclick(function() {
+	$(this).css('font-size', '18px');
+	$('li').hover(
+		function(){
+			$(this).css('color', 'red');
+		},
+		function(){
+			$(this).css('color', 'white');
+		});
+	});
+	});
 });
 	</script>
 </head>
