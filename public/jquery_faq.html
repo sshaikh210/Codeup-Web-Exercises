@@ -12,18 +12,13 @@
         "use strict";
 
         $(document).ready(function() {
-            $('ul').each(function(index) {
-                $(this).children().first().css('font-weight', 'bold')
-        $('li').click(function(event) {
-                event.preventDefault();
-                $(this).parent().addClass('invisible');
-        $('h3').click(function(event) {
-                event.preventDefault();
-                $('li').parent().removeClass('invisible');
-            });
-            });
+        $('li').click(function() {
+                $('.park').toggle();
+        $('li').click(function() {
+                $('.park').hide();
             });
         });
+    });
     </script>
 </head>
 <body>
@@ -50,4 +45,3 @@
 </ul>
 </body>
 </html>
-<!-- Create jQuery code that adds the invisible class on the parent ul of any li that is clicked. -->
