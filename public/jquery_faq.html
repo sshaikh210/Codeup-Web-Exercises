@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example jQuery Page</title>
+    <script src="/js/jquery.js"></script>
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+    <script>
+        "use strict";
+
+        $(document).ready(function() {
+         $('#answers').click(function(event) {
+                event.preventDefault();
+                $('dd').fadeToggle('invisible');
+            });
+        });
+    </script>
+</head>
+<body>
+<h1 id="codeup">Frequently Asked Questions on National Parks!</h1>
+<dl>
+  <dt>What government agency oversees the National Parks?</dt>
+  <dd class='invisible'>Department of the Interior</dd>
+  <dt>How many employees are in the National Park Service?</dt>
+  <dd class='invisible'>Over 20,000</dd>
+  <dt>How old is the National Park Systen?</dt>
+  <dd class='invisible'>Stated August 25th, 1916</dd>
+  <dt>What is the largest National Park?</dt>
+  <dd class='invisible'>Wrangell-St. Elias National Park and Reserve - 13.2 Million Acres</dd>
+  <dt>What is the smallest National Park?</dt>
+  <dd class='invisible'>Thaddeus Kosciuszko National Memorial - .02 Acres</dd>
+  <dt>How many people visit the National Parks?</dt>
+  <dd class='invisible'>Over 200,000 people</dd>
+  <dt>What is the most visited National Park??</dt>
+  <dd class='invisible'>Golden Date National Recreation Area</dd>
+  <dt>What is the National Park Service budget?</dt>
+  <dd class='invisible'>As of FY 2014: $2.98 Billion</d>
+  <dt>How do I obtain a park pass</dt>
+  <dd class='invisible'>By visiting your nearest park</dd>
+  <dt>What role did the National Park Service have in the Deepwater Horizon oil spill response?
+</dt>
+  <dd class='invisible'>The National Park Service was an integral part of the national federal response to the explosion of the Deepwater Horizon drilling rig which occurred in the Gulf of Mexico on April 20, 2010</dd>
+</dl>
+    <a href="#" id="answers">Click here to find the answers!</a>
+</body>
+</html>
