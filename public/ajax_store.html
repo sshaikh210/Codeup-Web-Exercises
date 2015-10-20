@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+(function() {
+    $(document).ready(function(){
+      $("#ref_butn").click(function(){
+     location.reload();
+      });
+    });
+    // TODO: Create an ajax GET request for /data/inventory.json
+   $.ajax("/data/inventory.json");
+
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+     $.ajax("/data/inventory.json").done(function(data) {
+
+        var productData;
+
+        data.forEach(function(name) {
+             productData += '<tr><td>' + name.title + '</td><td>' + name.quantity + '</td><td>' + name.price + '</td><td>' + name.categories + '</td></tr>';
+
+             $('#insertProducts').html(productData)
+        });
+        console.log("Data returned from server:");
+        console.log(data);
+    });
+
+})();
+</script>
+<button id="ref_butn">Refresh the page!</button>
+
+</body>
+</html>
