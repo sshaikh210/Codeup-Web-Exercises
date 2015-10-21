@@ -1,29 +1,31 @@
 [
     {
-        "title": "My First Blog Post",
-        "posts": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "categories": [
-            "greek"
+        "title": "My First Blog Post - Who am I?",
+        "posts": "My name is Sakib Shaikh, I am married, my wife is Kinza Shaikh, I have a daughter Haniyah Shaikh, and we are expecting our second child inshallah - Umrah Shaikh",
+        "tags": [
+            "family",
+            "husband",
+            "wife",
+            "kids"
         ],
         "date": "January 25, 2015"
     }, {
-        "title": "The Second Post",
-        "posts": "Cupcake ipsum dolor sit amet gummies. Cake chocolate sweet ice cream oat cake biscuit bear claw dessert. Jujubes marzipan toffee apple pie pastry dragée jujubes marshmallow. Dragée chocolate gingerbread liquorice chocolate bar jujubes. Sweet chocolate bar jelly-o chocolate cake candy carrot cake cotton candy macaroon marzipan. Sweet roll biscuit sweet gummies topping sesame snaps tootsie roll sugar plum pie. Sweet muffin croissant chocolate cake chupa chups. Donut croissant gummies donut powder ice cream. Chupa chups halvah apple pie topping jelly beans donut candy canes donut. Bonbon cake gummi bears cheesecake tart topping powder liquorice gummi bears.",
-        "categories": [
-            "family",
-            "candy",
-            "sweets",
-            "sugar"
+        "title": "Liberal Victory in Canada!",
+        "posts": "Canada's Liberal leader Justin Trudeau rode a late campaign surge to a stunning election victory on Monday, toppling Prime Minister Stephen Harper's Conservatives with a promise of change and returning a touch of glamor, youth and charisma to Ottawa.", 
+        "tags": [
+            "canada",
+            "liberal",
+            "trudeau",
+            "harper"
         ],
-        "date": "February 14, 2015"
+        "date": "October 18, 2015"
     }, {
-        "title": "The Third Post",
-        "posts": "My name is Sakib Shaikh, I am married, my wife is Kinza Shaikh, I have a daughter Haniyah Shaikh, and we are expecting our second child inshallah - Umrah Shaikh",
-        "categories": [
-            "family",
-            "candy",
-            "sweets",
-            "sugar"
+        "title": "My Third Blog Post - A Thousand Miles in Their Shoes",
+        "posts": "Braving masked commandos, razor-sharp border fences and baton-wielding riot police, hundreds of thousands of refugees are fleeing war and misery by flocking to Western Europe in the largest mass movement of people since World War II. The WorldPost's Sophia Jones and Syrian-American journalist Hiba Dlewati traveled with refugees -- mostly Syrians -- for three weeks in August as they made their way from Turkey through Greece, Macedonia, Serbia, Hungary, Austria and Germany. What they found was a modern-day underground railroad of sorts, made up of dedicated people defying the inaction of their governments by lending a helping hand to the men, women and children risking death for a better tomorrow. Here are the stories of a people in exodus -- and those who guide them to safety." ,
+        "tags": [
+           "Syrians",
+           "refugees",
+           "Turkey"
         ],
         "date": "October 19, 2015"
     }

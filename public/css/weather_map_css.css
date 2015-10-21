@@ -1,0 +1,37 @@
+.body {
+		background-color: #C8C8C8;
+
+}
+#city {
+	font-size: 24px;
+}
+#header {
+	
+}
+#weather {
+	background-color: #B8B8B8;
+	width: 1122px;
+	height: 1175px;
+	margin: 10px;
+	text-align: center;
+	position: center;
+}
+.forecast {
+	font-size: 18px;
+	width: 250px;
+	position: relative;
+}
+.col-md-4 {
+	background-color: #D0D0D0;
+	padding: 0px;
+	margin: 15px;
+	width: 250px;
+	text-align: center;
+}
+.col-md-4:hover {
+	transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+.temp {
+	font-size: 18px
+}

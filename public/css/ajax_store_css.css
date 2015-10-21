@@ -1,0 +1,31 @@
+table, th {
+	border: 1px solid black;
+	font-size: 32px;
+	font-family: 'Oswald', sans-serif;
+}
+.header {
+	font-family: 'Oswald', sans-serif;
+}
+.title {
+	width: 200px;
+	background-color: #ADB8C2;
+}
+.quantity {
+	width: 175px;
+	background-color: #BBC4CC;
+}
+.price {
+	width: 175px;
+	background-color: #ADB8C2;
+}
+.categories {
+	width: 220px;
+	background-color: #BBC4CC;
+}
+tr {
+	border: 1px solid black;
+}
+#products {
+	border: 1px solid black;
+
+}
