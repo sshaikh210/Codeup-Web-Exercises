@@ -10,10 +10,6 @@
 	}).done(function(data) {
 	    console.log(data);
 	var weather = " ";
-	var humidity = " ";
-	var rain = " ";
-	var press = " ";
-	var speed = " ";
 
 	    data.list.forEach(function(day){
 	    	console.log("High of: " + day.temp.max);
@@ -27,7 +23,8 @@
 			weather += '<div class="col-md-4">';
 			weather += '<div class="date">' + moment.unix(day.dt).format("ddd, MMM Do") + '</div>';
 			weather += '<img class="weatherIcon" src="http://openweathermap.org/img/w/' + day.weather[0].icon + '.png">';
-			weather += '<p class="forecast"><br>' + '<div class="temp">' + Math.round(day.temp.max) +"°F" + "/" + Math.round(day.temp.min) + "°F" + '</div><br>';
+			weather += '<p class="forecast"><br>' + '<div class="temp">' + Math.round(day.temp.max) +"°F"; 
+			weather += "/" + Math.round(day.temp.min) + "°F" + '</div><br>';
 			weather += "Humidity: " + day.humidity + '<br>';
 			weather +=  "Description: " + day.weather[0].description + '<br>';
 			weather += "Pressure: " + Math.round(day.pressure) + '<br>' + "Wind Speed: " + Math.round(day.speed) + '</p>';
