@@ -6,12 +6,13 @@
 	-webkit-border-radius: 250px;
 	border-radius: 250px;
 }
-#cone {
+#coneBlue {
   width: 0;
   height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 100px solid red;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  border-top: 200px solid blue;
+  opacity: 0px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
