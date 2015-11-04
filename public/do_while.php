@@ -1,7 +1,7 @@
 <?php
-$a = 100;
+$a = 2;
 do {
     echo "\$a is equal to {$a}\n";
-    $a-=5;
-} while ($a >= -10);
+    $a= $a * $a;
+} while ($a <= 100000);
 ?>
