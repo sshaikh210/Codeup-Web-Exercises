@@ -1,26 +1,23 @@
 <?php
-  var_dump($_GET);
-  var_dump($_POST);
+var_dump($_POST);
+$name = isset($_POST['name']) ? $_POST['name'] : '';
+$number = isset($_POST['number']) ? $_POST['number'] : '';
+
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+    <title>POST Example</title>
+</head>
 <body>
-    <head>
-        <meta charset="utf-8">
-        <title>Form</title>
-    </head>
-<form method="POST" action="/process-form.php">
-    <p>
-        <label for="username">Username</label>
-        <input id="username" name="username" type="text">
-    </p>
-    <p>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password">
-    </p>
-    <p>
+	<h2>Hello <?= $name; ?> </h2>
+	<p>Your number is <?= $number; ?> </p>
+    <form method="POST" action="form_results.php">
+        <label>Name</label>
+        <input type="text" name="name"><br>
+        <label>Number</label>
+        <input type="text" name="number"><br>
         <input type="submit">
-    </p>
-</form>
+    </form>
 </body>
 </html>

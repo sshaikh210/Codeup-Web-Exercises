@@ -10,11 +10,11 @@
 	<h1>My Favorite Things!</h1>
 
 	<table style="width: 100%" background-color='grey'>
-		<?php foreach ($things as $words) { ?>
+		<?php foreach ($things as $words): ?>
 			<tr>
-				<td><?php echo $words .PHP_EOL ?></td>
+				<td><?= $words .PHP_EOL ?></td>
 			</tr>
-		<?php } ?>
+		<?php endforeach; ?>
 	</table>
 
 </body>
