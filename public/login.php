@@ -1,15 +1,24 @@
 <?php
+session_start();
 var_dump($_POST);
+
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 $password = isset($_POST['password']) ? $_POST['password'] : '';
+$message = '';
 
 function redirect() {
     header("Location: authorized.php");
     die();
 }
-    if ($name == 'guest' && $password == 'password') { 
+    if (isset($_SESSION['IS_LOGGED_IN']) && ($_SESSION['IS_LOGGED_IN'])) {
         redirect();
-    } else {
+    }
+    if ($name == 'guest' && $password == 'password') { 
+        $_SESSION['LOGGED_IN_USER'] = $name;
+        $_SESSION['IS_LOGGED_IN'] = true;
+        redirect();
+    } 
+    if ($name != 'guest' && $name != '') {
        $message = "Login Failed";
     }
 

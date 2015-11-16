@@ -1,18 +1,38 @@
 <?php
-var_dump($_POST);
+// start the session (or resume an existing one)
+// this function must be called before trying to set of get any session data!
+session_start();
+
+// get the current session id
+$sessionId = session_id();
+
+// initialize view count variable
+$viewCount = 0;
+
+// check to see if we have a view count being tracked in the session
+if (!empty($_SESSION['VIEW_COUNT'])) {
+    // we found one, use it instead of the default
+    $viewCount = $_SESSION['VIEW_COUNT'];
+} elseif (!empty($_SESSION['VIEW_COUNT'])) {
+    // we found one, use it instead of the default
+    $viewCount = $_SESSION['VIEW_COUNT'];
+}
+
+// increment the counter
+$viewCount++;
+
+// store the new value to the session
+$_SESSION['VIEW_COUNT'] = $viewCount;
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>POST Example</title>
+    <title>Session Example</title>
 </head>
 <body>
-    <form method="POST">
-        <label>Name</label>
-        <input type="text" name="name"><br>
-        <label>Number</label>
-        <input type="text" name="number"><br>
-        <input type="submit">
-    </form>
+    Session Id: <?php echo $sessionId; ?><br>
+    View Count: <?php echo $viewCount; ?><br>
+    User is logged in: <?= $_SESSION['is_logged_ih']; ?>
 </body>
 </html>
