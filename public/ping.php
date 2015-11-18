@@ -1,8 +1,8 @@
 <?php 
-
+require "functions.php";
 function pageController()
 {
-$counter = isset($_GET['counter']) ? $_GET['counter'] : 0;
+$counter = Input::has('counter') ? Input::get('counter') : 0;
 
 return array(
 	'counter' => $counter,

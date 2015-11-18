@@ -1,38 +1,28 @@
 <?php
-// start the session (or resume an existing one)
-// this function must be called before trying to set of get any session data!
-session_start();
+require_once "functions.php";
+require_once "Automobile.php";
 
-// get the current session id
-$sessionId = session_id();
+$beetle = new Automobile('VW', 'Beetle');
+var_dump($beetle);
 
-// initialize view count variable
-$viewCount = 0;
+unset($beetle);
 
-// check to see if we have a view count being tracked in the session
-if (!empty($_SESSION['VIEW_COUNT'])) {
-    // we found one, use it instead of the default
-    $viewCount = $_SESSION['VIEW_COUNT'];
-} elseif (!empty($_SESSION['VIEW_COUNT'])) {
-    // we found one, use it instead of the default
-    $viewCount = $_SESSION['VIEW_COUNT'];
-}
+echo "end of file";
+// $beetle->make = 'VW';
+// $beetle->model = 'Beetle';
+// $beetle->year = '1968';
 
-// increment the counter
-$viewCount++;
+// echo $beetle->revEngine('large') . PHP_EOL;
 
-// store the new value to the session
-$_SESSION['VIEW_COUNT'] = $viewCount;
+// echo $beetle->getDescription() . PHP_EOL;
+// $beetle->honk();
 
+// $beamer = new Automobile();
+// $beamer->make = 'BMW';
+// $beamer->model = 'M5';
+// $beamer->year = '2015';
+// $beamer->owner = 'Bob';
+
+// echo $beamer->getDescription() . PHP_EOL;
+// echo $beamer->revEngine('large') . PHP_EOL;
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Session Example</title>
-</head>
-<body>
-    Session Id: <?php echo $sessionId; ?><br>
-    View Count: <?php echo $viewCount; ?><br>
-    User is logged in: <?= $_SESSION['is_logged_ih']; ?>
-</body>
-</html>

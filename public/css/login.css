@@ -1,0 +1,14 @@
+body {
+    background-color: #F0F0F0;
+}
+.nav {
+	background-color: #3a5795;
+    height: 82px;
+/*    min-width: 880px;
+*/    text-align: right;
+}
+.img {
+    width: 200px;
+    height: 75px;
+    background-position: 0 0;
+}
