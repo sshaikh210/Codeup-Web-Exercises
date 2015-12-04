@@ -4,13 +4,6 @@ require_once "../lib/auth.php";
 require_once "../lib/Input.php";
 
 var_dump(Auth::user());
-// if (!$_SESSION['IS_LOGGED_IN']) {
-// 	header("Location: login.php");
-// 	die();
-// }
-// $LOGGED_IN_USER = $_SESSION['LOGGED_IN_USER'];
-// var_dump($LOGGED_IN_USER);
-
 
 ?>
 <!DOCTYPE html>

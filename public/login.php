@@ -10,7 +10,6 @@ $password = Input::get('password');
 $message = '';
 
 Auth::attempt($name, $password);
-// var_dump($_SESSION['LOGGED_IN_USER']);
 
 if (Auth::check()) {
      header("Location: authorized.php");
@@ -18,23 +17,6 @@ if (Auth::check()) {
 }
 
 Auth::user();
-// var_dump(Auth::user());
-
-// function redirect() {
-//     header("Location: authorized.php");
-//     die();
-// }
-//     if (isset($_SESSION['IS_LOGGED_IN']) && ($_SESSION['IS_LOGGED_IN'])) {
-//         redirect();
-//     }
-//     if ($name == 'guest' && $password == 'password') { 
-//         $_SESSION['LOGGED_IN_USER'] = $name;
-//         $_SESSION['IS_LOGGED_IN'] = true;
-//         redirect();
-//     } 
-//     if ($name != 'guest' && $name != '') {
-//        $message = "Login Failed";
-//     }
 
 ?>
 <!DOCTYPE html>

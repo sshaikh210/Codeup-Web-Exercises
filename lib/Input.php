@@ -2,6 +2,12 @@
 
 class Input
 {
+    public static function setAndNotEmpty($key)
+    {
+        if(isset($_REQUEST[$key]) && $_REQUEST [$key] != '') {
+            return true;
+        }
+    }
 
     public static function has($key)
     {
