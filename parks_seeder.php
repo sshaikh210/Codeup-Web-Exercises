@@ -1,5 +1,5 @@
 <?php
-REQUIRE 'park_migration.php';
+require_once 'park_migration.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 

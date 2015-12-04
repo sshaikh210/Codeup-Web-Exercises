@@ -4,7 +4,7 @@ define('DB_NAME', 'codeup_test_db');
 define('DB_USER', 'codeup');
 define('DB_PASS', 'password');
 
-REQUIRE 'dbconnect.php';
+require_once 'dbconnect.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
