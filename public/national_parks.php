@@ -35,11 +35,11 @@ $stmt->execute();
 $parks = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
 function insertPark($dbc) {
-	$name = Input::get('name');
-	$date_established = Input::get('date_established');
-	$location = Input::get('location');
-	$area_in_acres = Input::get('area_in_acres');
-	$description = Input::get('description');
+	$name = Input::getString('name');
+	$date_established = Input::getString('date_established');
+	$location = Input::getString('location');
+	$area_in_acres = Input::getNumber('area_in_acres');
+	$description = Input::getString('description');
 
 	$query = "INSERT INTO national_parks (name, location, date_established, area_in_acres, description)
 		VALUES (:name, :location, :date_established, :area_in_acres, :description)";

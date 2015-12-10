@@ -22,6 +22,23 @@ class Input
             return NULL;
         }
     }
+    public static function getString($key)
+    {
+        $value = trim(self::get($key));
+        if(!is_string($value)) {
+            throw new Exception("{$key} must be a String");
+        }
+         return ($value); 
+    }
+    public static function getNumber($key)
+    {
+        $value = trim(self::get($key));
+        if(!is_numeric($value)) {
+            throw new Exception("{$key} must be an Integer");
+        }
+         return ($value); 
+    }
+
 
     ///////////////////////////////////////////////////////////////////////////
     //                      DO NOT EDIT ANYTHING BELOW!!                     //
