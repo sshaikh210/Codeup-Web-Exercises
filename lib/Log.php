@@ -2,20 +2,27 @@
 
 class Log
 {
-	public $filename = '';
-	public $handle = '';
+	private $filename = '';
+	private $handle = '';
 
 	public function __construct($prefix='log')
 	{
 		$today = date("Y-m-d");		
-		$this->filename = $prefix.$today.'log';
-		$this->handle = fopen($this->filename, 'a');
+		$this->setFilename($prefix.$today.'log');
+		$this->setHandle(fopen($this->filename, 'a'));
 	}
 	public function __destruct ()
 	{
 		fclose($this->handle);
 	}
-
+	protected function setFilename($filename)
+	{
+		$this->filename = $filename;
+	}
+	protected function setHandle($handle)
+	{
+		$this->handle = $handle;
+	}
 	public function logMessage($logLevel, $message)
 	{
 		$todayLog = date("Y-m-d h:i:s");

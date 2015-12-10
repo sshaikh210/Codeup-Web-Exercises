@@ -20,6 +20,7 @@
 .jumbotron .container {
   position: relative;
   top:100px;
+  color: #fff;
 }
 
 .jumbotron h1 {
@@ -58,4 +59,8 @@
 .neighborhood-guides p {
     font-size: 15px;
     margin-bottom: 13px;
+}
+.thumbnail {
+    width: 300px;
+    height: 200px;
 }
