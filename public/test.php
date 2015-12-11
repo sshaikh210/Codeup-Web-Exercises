@@ -1,18 +1,19 @@
 <?php
-class Father
-{
-    protected static $name = 'Darth Vader';
 
-    public static function getName() 
-    {
-        return static::$name;
-    }
-}
+function sillyFunction ()
+	{
+		throw new Exception ("NONONONONOOOOOOOOOOOOOO!");
+		echo "I am code from inside the function\n";
+	}
 
-class Son extends Father
-{
-    protected static $name = 'Luke Skywalker';
-}
-echo Father::getName() . PHP_EOL;
-echo Son::getName() . PHP_EOL;
+	try {
+		echo "I am code before the function\n";
+		sillyFunction();
+		echo "I am code after the function\n";
+
+	} catch(Exception $e) {
+		echo "Oh noes!! An exception was raised!\n";
+	}
+		echo "But I'm still going baby!\n";
+
 ?>

@@ -38,7 +38,20 @@ class Input
         }
          return ($value); 
     }
-
+    public static function getDate($key)
+    {
+        $date = trim(self::get($key));
+        if(!strtotime($date)) {
+            throw new Exception("{$key} must be in YYYY-MM-DD format");
+        } else {
+            $dateArray = date_parse(date("y-m-d", strtotime($date)));
+            if (checkdate($dateArray['month'], $dateArray['day'], $dateArray['year'])) {
+                return date("y-m-d", strtotime($date));
+            } else {
+                throw new Exception ("Not a valid date format");
+            }
+        }
+    }
 
     ///////////////////////////////////////////////////////////////////////////
     //                      DO NOT EDIT ANYTHING BELOW!!                     //
